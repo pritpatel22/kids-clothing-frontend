@@ -1,0 +1,62 @@
+
+/* .carousel-item img {
+    
+    max-width: 100%;
+    height: auto;
+} */
+/* Custom CSS for category section */
+/* Custom CSS for category section */
+.category-section {
+    margin-top: 50px;
+    text-align: center;
+}
+.category-title {
+    font-weight: bold;
+}
+ .category-item {
+    overflow: hidden; /* Prevent images from getting cut off */
+    position: relative; /* Position relative for shadow effect */
+} 
+.category-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+.category-item:hover img {
+    transform: scale(1.10); /* Enlarge image on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.p1{
+    margin-bottom: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size:12px;
+    padding: 8px 0px 3px ;
+    text-align: left;
+    font-weight: bold;
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+.p2{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size:12px;
+    margin-bottom: 0px;
+}
+ .age-section {
+            margin-top: 50px;
+        }
+        .age-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .price-section {
+            margin-top: 50px;
+        }
+        .price-item img {
+            max-width: 100%;
+            height: auto;
+        }
+       

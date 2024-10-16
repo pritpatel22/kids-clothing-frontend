@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout Form</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles/footer.css" type="text/css">
+    <link rel="stylesheet" href="styles/navbar.css" type="text/css">
+    <link rel="stylesheet" href="styles/purchase.css" type="text/css">
+    <script src="scripts/script.js" defer></script>
+      
+</head>
+
+<body>
+    <header>
+    
+        <!-- Navbar goes here -->
+        <div class="container-fluid position-relative p-0">
+          
+          <nav
+            class="navbar navbar-expand-lg navbar-light   px-lg-5 py-3 py-lg-0  bg-white navbar-1 fixed-top"
+          >
+           <!-- Your custom navbar content -->
+           
+            <!-- <div class="container"> -->
+            <!-- Logo -->
+            <a class="navbar-brand" href="main.html">
+              <img class="img-fluid"
+                src="img/logo.jpg"
+                alt="Your Logo"
+                height="auto"
+                width="100px"
+              
+              />
+            </a>
+            <!-- Toggler/collapsible Button -->
+            <button
+              class="navbar-toggler "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 text-secondary">
+                <!-- Boys Dropdown Menu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="boysDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Boys
+                  </a>
+                  <ul class="dropdown-menu" >
+                    <li>
+                      <a class="dropdown-item" href="bsweatshirt.html">Hoodie and Sweatshirt</a>
+                    </li>
+                    <li><a class="dropdown-item" href="bjacket.html">Jacket</a></li>
+                    <li><a class="dropdown-item" href="btshirt.html">T-shirt</a></li>
+                    <li><a class="dropdown-item" href="bjogger.html">Jogger</a></li>
+                    <li><a class="dropdown-item" href="bpolo.html">Polo</a></li>
+                  </ul>
+                </li>
+                <!-- Girls Dropdown Menu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="girlsDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Girls
+                  </a>
+                  <ul class="dropdown-menu" >
+                    <li><a class="dropdown-item" href="ghoodie.html">Hoddie</a></li>
+                    <li><a class="dropdown-item" href="gjacket.html">Jacket</a></li>
+                    <li><a class="dropdown-item" href="gtshirt.html">T-shirt</a></li>
+                    <li><a class="dropdown-item" href="gtshirt.html">Tops</a></li>
+                    <li><a class="dropdown-item" href="gdress.html">Dresses</a></li>
+                    <li><a class="dropdown-item" href="gjoggers.html">Jogger</a></li>
+                  </ul>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Themes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Membership</a>
+                </li>
+              </ul>
+              
+              <!-- Right Side Icons with Text -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-user"></i> Profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-heart"></i> Wishlist
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+        <div class="container my-5" id="printContent">
+        <div class="row">
+            <div class="col-lg-4 order-lg-last">
+                <h4 class="d-flex justify-content-between align-item-center">
+                    <span class="text-muted">Your Cart</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        
+                        <div id="imageContainer"></div>
+                        <div id="productName"></div>
+                        <div id="priceamt"></div>
+                        
+                    </li><br>
+                    <li class="list-group-item  justify-content-between">
+                        Quantity   
+                        <select class="form-select" >
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>  
+                            </select>
+                            &nbsp;&nbsp;Size
+                            <select class="form-select" >
+                           
+                                <option>4-5 Y</option>
+                                <option>5-6Y</option>
+                                <option>6-7Y</option>
+                                <option>7-8Y</option>
+                                <option>8-9Y</option>  
+                            </select>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <h4>Billing Address</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="firstname"><i class="bi bi-person"></i> First Name</label>
+                            <input type="text" id="firstname" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="lastname">Last name</label>
+                            <input type="text" id="lastname" class="form-control">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="from-label" for="username">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="usrname">
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label" for="email">Email
+                                <span class="text-muted"> (Optional)</span>
+                            </label>
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label" for="address">Address </label>
+                            <input type="text" id="address" class="form-control">
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label class="form-label" for="country">Country </label>
+                            <select class="form-select" id="country">
+                                <option>Choose</option>
+                                <option>India</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label" for="state">State </label>
+                            <select class="form-select" id="state">
+                                <option>Choose</option>
+                                <option>AndraPradesh</option>
+                                <option>Mumbai</option>
+                                <option>Gujarat</option>
+                                <option>Karnataka</option>
+                                <option>Rajasthan</option>  
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label " for="zip">Zip </label>
+                            <input type="text" id="zip" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <hr>
+                    <div class="container ">
+                        <div class="row ">
+                            
+                            <div class="col-8">
+                                <h4>PAYMENT</h4>
+                                <!-- Billing address form -->
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="radio" class="form-check-input" id="credit-card" name="payment" onclick="togglePaymentDetails('credit-card-details', 'upi-details')">
+                                <label class="form-check-label" for="credit-card">Credit Card</label>
+                                <div id="credit-card-details" class="payment-details">
+                                    <!-- Credit card details -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label" for="cardname">Name on Card</label>
+                                            <input type="text" id="cardname" class="form-control">
+                                            <small class="text-muted">Full name as displayed on card</small>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label" for="creditcard">Credit Card Number</label>
+                                            <input type="text" id="creditcard" class="form-control">
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="expiration">Expiration</label>
+                                            <input type="text" id="expiration" class="form-control">
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="cvv">CVV</label>
+                                            <input type="text" id="cvv" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="radio" class="form-check-input" id="upi" name="payment" onclick="togglePaymentDetails('upi-details', 'credit-card-details')">
+                                <label class="form-check-label" for="upi">UPI</label>
+                                <div id="upi-details" class="payment-details">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="upi-id">UPI ID</label>
+                                        <input type="text" id="upi-id" class="form-control" placeholder="Enter UPI ID">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <hr>
+                    <button type="submit" class="btn btn-primary btn-block mb-4 btn-print"  id="printButton">Continue To Checkout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div  class="additional-heading">HomeGrown Indian Brand</div>
+        <div id="main-footer-div" class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="op-details-footer-div-childs">
+                        <h3>NEED HELP</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="op-details-footer-div-childs">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Stores Near Me</a></li>
+                            <li><a href="#">Community Initiatives</a></li>
+                            <li><a href="#">KIDZ Army</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="op-details-footer-div-childs">
+                        <h3>MORE INFO</h3>
+                        <ul>
+                            <li><a href="#">T&C</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="op-details-footer-div-childs">
+                        <ul id="COD-and-return">
+                            <li>
+                                <img src="./img/Screenshot 2023-02-23 131711.png" alt="error" />COD Available
+                            </li>
+                            <li>
+                                <img src="./img/Screenshot 2023-02-23 131818.png" alt="error" />30 Days Easy Returns
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="row">
+                
+                <div class="row">
+                    <div class="col-md-12 text-center mt-4">
+                        <h5>EXPERIENCE THE KIDZ HUB  APP</h5>
+                        <div>
+                            <img src="./img/play store.png" alt="error" />
+                            <img src="./img/app store.png" alt="error" />
+                        </div>
+                    </div>
+                </div>
+                <div id="social-handles">
+                    <div>Follow Us:</div>
+                    <div class="img-fluid  "><img src="./img/facebook.png" alt="Facebook" /></div>
+                    <div class="img-fluid"><img src="./img/insta.png" alt="Instagram" /></div>
+                    <div class="img-fluid"><img src="./img/notify.png" alt="Notification" /></div>
+                    <div class="img-fluid"><img src="./img/twitter.png" alt="Twitter" /></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="to-flex-divs-footer">
+                        <h4>NAVIGATION LINKS</h4>
+                        <button id="nav-link-plus">+</button>
+                    </div>
+                    <div id="hidden-divs-footerOne">
+                        <!-- Navigation links content -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="to-flex-divs-footer">
+                        <h4>WHO WE ARE</h4>
+                        <button id="who-link-plus">+</button>
+                    </div>
+                    <div id="hidden-divs-footerTwo">
+                        <!-- Who we are content -->
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="pay-partners-flex-divs">
+                        <div><p>100% Secure Payment:</p></div>
+                        <div><img src="./img/payment partners.png" alt="error" /></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pay-partners-flex-divs">
+                        <div><p>Shipping Partners:</p></div>
+                        <div><img src="./img/shipping partners.png" alt="error" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <span style="font-size: 0.8rem; color: gray">&#9400;The KIDZ HUB 2024-25</span>
+                </div>
+            </div>
+        </div>
+      </footer>
+      
+</body>
+    
+
+
+</html>

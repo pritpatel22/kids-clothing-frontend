@@ -1,0 +1,17 @@
+.container {
+    background-color: #f0f0f0; /* Pleasant background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.payment-details {
+    display: none;
+}
+#imageContainer img {
+max-width: 150px; /* Ensure the image doesn't exceed its container width */
+height: auto; /* Maintain aspect ratio */}
+@media print {
+    .btn-print {
+        display: none !important;
+    }
+}
